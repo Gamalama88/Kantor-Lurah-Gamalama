@@ -1,0 +1,15 @@
+
+[
+  {
+    "judul": "Pembersihan Saluran Air",
+    "tanggal": "2025-07-01",
+    "deskripsi": "Kegiatan gotong royong bersama warga membersihkan saluran air.",
+    "gambar": "images/pembersihan.jpg"
+  },
+  {
+    "judul": "Pelatihan UMKM",
+    "tanggal": "2025-07-10",
+    "deskripsi": "Pelatihan dan penyuluhan UMKM untuk pemberdayaan ekonomi lokal.",
+    "gambar": "images/umkm.jpg"
+  }
+]

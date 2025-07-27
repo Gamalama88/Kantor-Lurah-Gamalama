@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Informasi dan Kegiatan</title>
+</head>
+<body>
+  <h2>Informasi dan Kegiatan</h2>
+  <div id="activities"></div>
+
+  <script>
+    fetch('data/kegiatan.json')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('activities');
+        data.forEach(item => {
+          const div = document.createElement('div');
+          div.innerHTML = `<h3>${item.judul}</h3><p>${item.tanggal}</p><p>${item.deskripsi}</p><img src="${item.gambar}" width="300"/>`;
+          container.appendChild(div);
+        });
+      });
+  </script>
+</body>
+</html>
